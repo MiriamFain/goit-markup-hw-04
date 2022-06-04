@@ -150,6 +150,7 @@ img {
 
 .header-contact-link {
   display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -157,6 +158,25 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+}
+
+.envelope-icon,
+.smartphone-icon {
+  margin-right: 10px;
+  justify-content: center;
+  fill: rgba(117, 117, 117, 1);
+}
+
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.header-contact-link:hover .icon,
+.header-contact-link:focus .icon {
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* .header-contact .item::before {
@@ -170,7 +190,7 @@ img {
   background-color: #f5f4fa;
 } */
 
-.header-contact .icon-envelope::before {
+/* .header-contact .icon-envelope::before {
   display: inline-block;
   background-image: url(../images/envelope.svg);
   content: "";
@@ -178,12 +198,7 @@ img {
 
 .header-contact .icon-smartphone {
   background-image: url(../images/smartphone.svg);
-}
-
-.header-contact-link:hover,
-.header-contact-link:focus {
-  color: var(--accent-color);
-}
+} */
 
 /*----------------------------HERO----------------------------*/
 
@@ -307,7 +322,7 @@ img {
   margin-right: 0;
 }
 
-.features-list .item::before {
+/* .features-list .item::before {
   display: block;
   content: "";
   height: 120px;
@@ -332,7 +347,7 @@ img {
 
 .icon-astronaut::before {
   background-image: url("../images/astronaut1.svg");
-}
+} */
 
 .features {
   font-size: 14px;
@@ -357,6 +372,16 @@ img {
 
 .features-section {
   padding-bottom: 0;
+}
+
+.features-icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
 
 /*  .section .bg:nth-child(2n) {
@@ -523,9 +548,11 @@ img {
 /*----------------------------FOOTER--------------------------*/
 
 .footer {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--dark-bg-color);
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -537,6 +564,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-right: 70px;
 }
 
 .footer-address-link {
@@ -557,19 +585,14 @@ img {
   color: var(--accent-color);
 }
 
-.footer-social-content {
-  display: flex;
-}
-
 .footer-social-text {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--first-contrast-text-color);
+  margin-top: 72px;
 }
 
 .footer-social-list {
