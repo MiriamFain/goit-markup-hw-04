@@ -548,10 +548,13 @@ img {
 /*----------------------------FOOTER--------------------------*/
 
 .footer {
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--dark-bg-color);
+}
+
+.footer-content {
+  display: flex;
   align-items: baseline;
 }
 
@@ -564,7 +567,6 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-right: 70px;
 }
 
 .footer-address-link {
@@ -593,11 +595,15 @@ img {
   text-transform: uppercase;
   color: var(--first-contrast-text-color);
   margin-top: 72px;
+  margin-bottom: 20px;
+}
+
+.footer-social-content {
+  margin-left: 70px;
 }
 
 .footer-social-list {
   display: flex;
-  justify-content: center;
 }
 
 .footer-social-item {
